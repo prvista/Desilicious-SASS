@@ -2,6 +2,7 @@
 @use "../base/" as *;
 
 .header{
+    position: fixed;
     width: 100%;
     z-index: 999;
     padding: 2rem 0;
@@ -9,26 +10,112 @@
 
     &__wrapper{
         @include between;
-        
+
         img{
             height: 3rem;
             width: 10rem;
+
+            @include mediaQuery(520px){
+              height: 4rem;
+              width: 10rem;
+            }
         }
     }
 
-    &__nav{
-        display: flex;
-        gap: 1rem;
-        font-size: 1.2rem;
+  &__nav{
+    display: flex;
+    gap: 1rem;
+    font-size: 1.2rem;
 
-        li a {
-            color: $clr-light;
-            transition: 0.2s ease;
-        }
-
-        :hover{
-            color: $clr-secondary;
-            transition: 0.2s ease;
-        }
+    li a {
+        color: $clr-light;
+        transition: 0.3s  ease;
     }
+
+    :hover {
+        color: $clr-secondary;
+        transition: 0.3s  ease;
+    }
+
+    @include mediaQuery(520px){
+      position: fixed;
+      top: 0;
+      height: 100vh;
+      width: 100%;
+      z-index: 9999;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      background-color: $clr-dark;
+      right: -100rem;
+      transform: translateY(-18rem);
+      margin-top: 26rem;      
+      transition: 0.9s  ease;
+      gap: unset;
+      li{
+        /* width: 100%; */
+        cursor: pointer;
+        transition: 0.3s ease;
+        padding: 1.4rem;
+
+        &:hover{
+            background-color: $clr-primary;
+            transition: 0.3s ease;
+            a{
+                color: $clr-secondary;
+                transition: 0.3s ease;
+            }
+        }
+      }
+    }
+
+    &.open {
+      @include mediaQuery(520px) {
+        right: 0;
+        transition: 0.5s ease;
+      }
+    }
+  }
+  
+  .toggle__menu{
+    display: none;
+    cursor: pointer;
+    @include mediaQuery(520px){
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+
+        span {
+            background-color: $clr-light;
+            width: 2rem;
+            height: 0.2rem;
+            border: 2px solid;
+            border-radius: 1rem;
+            display: block;
+            transition: 0.5s ease;
+        }
+
+            &.open {
+                @include mediaQuery(520px){
+                right: 0;
+                transition: 0.5s ease;
+                }
+                span:nth-child(1) {
+                    transform: translate(0, 9px) rotate(45deg);
+                    transition: 0.5 ease;
+                }
+                span:nth-child(2){
+                opacity: 0;
+                transition: 0.5s ease;
+                }
+                span:nth-child(3){
+                    transform: translate(0, -9px) rotate(-45deg);
+                transition: 0.5s  ease;
+                }
+            }
+    }
+  }
 }
+
+
+

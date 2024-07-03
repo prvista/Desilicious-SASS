@@ -1,6 +1,12 @@
 @use "../abstract/" as *;
 @use "../base/" as *;
 
+.testimonial {
+    @include  mediaQuery(520px)  {
+        margin-top: -20rem;
+    }
+}
+
 .tns-outer {
     overflow: hidden;
     max-width: 70rem;
@@ -17,6 +23,11 @@
         height: 1rem;
         border-radius: 50%;
         border: none;
+
+        @include mobile {
+            width: .5rem;
+            height: .5rem;
+        }
     }
 
     &-active {
@@ -26,6 +37,10 @@
 
 #controls {
     position: absolute;
+
+    @include mobile {
+        display: none;
+    }
 }
 
 .prev {

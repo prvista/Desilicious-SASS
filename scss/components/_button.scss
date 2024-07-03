@@ -44,4 +44,37 @@
         @extend .bg--outline;
         border-radius: .3rem;
     }
+
+    &.bg--footer {
+        @extend .btn;
+        padding: .2rem 2rem;
+        background-color: $clr-secondary;
+        border-radius: 2rem;
+        color: $clr-light;
+        font-weight: 600;
+        box-shadow: rgba(231, 4, 4, 0.1) 0px 4px 12px;
+        transition: 0.3s ease;
+
+        &:hover{
+            background-color: $clr-light;
+            border: 1px solid $clr-secondary;
+            color: $clr-secondary;
+            transition: 0.3s ease;
+        }
+    }
+
+    &.bg--product{
+        @extend .btn;
+        border: 1px solid $clr-secondary;
+        color: $clr-light;
+        transition: 0.3s ease;
+        padding: .8rem 3rem;
+        margin: 0 auto;
+
+        &:hover{
+            background-color: $clr-light;
+            color: $clr-secondary;
+            transition: 0.3s ease;
+        }
+    }
 }

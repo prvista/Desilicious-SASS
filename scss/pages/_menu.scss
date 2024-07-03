@@ -1,0 +1,56 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+
+
+// pahe menu
+.pageMenu {
+    &__title{
+        @include centerAll;
+        flex-direction: column;
+    }
+    &__wrapper{
+        @include grid(2, 1rem);
+        justify-items: center;
+        @include mediaQuery(520px){
+            @include grid (1, 0rem)
+        }
+        br{
+            display: none;
+        }
+    }
+    &__content{
+        ul{
+            @include between;
+            li{     
+
+            color: $clr-secondary;
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+    }
+    p {
+        margin-bottom: 2rem;
+        text-align: center;
+
+        @include mediaQuery(520px){
+            text-align: unset;
+        }
+    }
+  }
+
+  &-img{
+    padding: 2rem 0;
+    img{
+        border-radius: 2rem;
+        width: 67rem;
+        height: 100%;
+        @include centerAll;
+        margin: 0 auto;
+
+        @include mediaQuery(520px){
+            border-radius: 1rem;
+        }
+    }
+  }
+}

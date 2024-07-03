@@ -1,0 +1,132 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+.product {
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+
+        @include mediaQuery(520px){
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            flex-direction: column-reverse;
+            display: flex;
+        }
+    }
+
+    &__item {
+        @include grid(3, 2rem);
+
+        @include mediaQuery(520px){
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__card {
+        border-radius: 2rem;
+        border: 1px solid $clr-secondary;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 1rem;
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        p{
+            color: $clr-secondary;
+            font-weight: 600;
+            padding-bottom: .5rem;
+        }
+
+        img {
+            width: 10rem;
+            height: 10rem;
+            margin: 0 auto;
+        }
+    }
+
+    &__search{
+        input {
+            background-color: $clr-dark;
+            color: $clr-light;
+            padding: 1rem;
+            border-radius: 1rem;
+            width: 15rem;
+
+            @include mediaQuery(520px){
+                width: 100%;
+            }
+        }
+
+        ::placeholder{
+            color: $clr-light;
+        }
+
+        i{
+            position: absolute;
+            margin-top: 1.1rem;
+            margin-left: -2rem;
+        }
+    }
+
+    &__category{
+        border-radius: 2rem;
+    }
+
+    // &__table {
+    //     background-color: $clr-dark;
+    //     max-width: 30rem;
+    //     width: 15rem;
+    //     padding: 5rem;
+    //     text-align: center;
+    //     border-radius: 1rem;
+
+    //     tr {
+    //         padding: 2rem;
+    //         td{
+    //             :nth-child(1){
+    //                 border-bottom: 1px solid $clr-light;
+    //             }
+    //             padding: 1rem;
+    //             h2{
+    //                 border-bottom: 2px solid $clr-light;
+    //             }
+    //         }
+    //     }
+    // }
+
+    ul {
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+        
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin: 0 auto;
+
+        @include mediaQuery(520px){
+            width: 100%;
+        }
+    }
+
+    &__category__list{
+        background-color: $clr-dark;
+        border-radius: 1rem;
+        padding: 1rem 2rem;
+
+        h2{
+            border-bottom: 1px solid$clr-light;
+            font-size: 1.5rem;
+            padding-bottom: .5rem;
+            margin-bottom: 1rem;
+        }
+    }
+}

@@ -7,48 +7,54 @@
     <link rel="stylesheet" href="./dist/css/main.min.css">
     <link rel="icon" href="./IMG/icon-logo.png">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+
+    <!-- <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
 </head>
-<body>
-    <!-- HEADER -->
-    <header class="header bg--dark position--fixed">
-        <div class="container">
-            <div class="header__wrapper">
-                <img src="./IMG/logo1.png" alt="">
-                <nav>
-                    <ul class="header__nav">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Menu</a></li>
-                        <li><a href="">Chefs</a></li>
-                        <li><a href="">Product</a></li>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">Contact</a></li>
-                    </ul>
-                </nav>
+
+    
+    <body>
+        <!-- HEADER -->
+    <header class="header bg--dark">
+    <div class="container">
+        <div class="header__wrapper">
+            <img src="./IMG/icon-logo-removebg-preview.png" alt="">
+            <nav>
+                <ul class="header__nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="./menu.html">Menu</a></li>
+                    <li><a href="./chef.html">Chefs</a></li>
+                    <li><a href="./product.html">Product</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="toggle__menu">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
+    </div>
     </header>
 
-    <!-- BANNER -->
-    <section class="homeBanner bg--dark">
+        <!-- Banner -->
+     <section class="homeBanner bg--dark">
         <div class="container">
-            <div class="homeBanner__wrapper">
-                <h4>IRRESISTIBLY GOOD</h4>
+            <div class="homeBanner__wrapper" data-aos="fade-up">
+                <h4>IRRESISTTIBLY GOOD</h4>
                 <h1>The Rich Taste of Indian Flavors</h1>
-
-                <p class="mb--3">Enjoy the taste of the best and most authentic Indian cuisines that are guaranteed to make <br> you want more with each bite!</p>
-
+                <p class="mb--3">Enjoy the taste of the best and most authentic Indian cuisines that are guaranted to make <br> you want more with each bite!
+                </p>
                 <ul class="homeBanner__button">
-                    <li><a href="" class="btn bg--secondary" >Order Online</a></li>
-                    <li><a href="" class="btn bg--secondary" >Book A Table</a></li>
+                    <li><a href="" class="btn bg--secondary">Order Online</a></li>
+                    <li><a href="" class="btn bg--secondary">Book A Table</a></li>
                 </ul>
-
-
-
             </div>
         </div>
-    </section>
+     </section>
 
 
     <!-- SPECIAL MENU -->
@@ -56,11 +62,11 @@
         <div class="container">
             <div class="homeMenu__title">
                 <h2 class="title">Delicia Special Menu</h2>
-                <p>Our menu has been crafted with a list of the most delicious Indian dishes <br> that we prepare with love</p>
+                <p>Our menu has been crafted with a list of the most delicious Indian dishes <br> that we prepare with love
+                </p>
             </div>
             <div class="homeMenu__wrapper">
-
-                <div class="homeMenu__card">
+                <div class="homeMenu__card" data-aos="fade-down-right">
                     <img src="./IMG/rice.png" alt="">
                     <div class="homeMenu__text">
                         <h3>The Rice Menu</h3>
@@ -68,148 +74,144 @@
                         <a href="" class="btn bg--outline">View All Items</a>
                     </div>
                 </div>
-
-                <div class="homeMenu__card">
-                    <img src="./IMG/rice.png" alt="">
+                <div class="homeMenu__card" data-aos="fade-down">
+                    <img src="./IMG/tanduri-chicken.png" alt="">
                     <div class="homeMenu__text">
-                        <h3>The Rice Menu</h3>
+                        <h3>The Chicken Menu</h3>
                         <p>25+ Items</p>
                         <a href="" class="btn bg--outline">View All Items</a>
                     </div>
                 </div>
-
-                <div class="homeMenu__card">
-                    <img src="./IMG/rice.png" alt="">
+                <div class="homeMenu__card" data-aos="fade-down-left">
+                    <img src="./IMG/french-salad.png" alt="">
                     <div class="homeMenu__text">
-                        <h3>The Rice Menu</h3>
+                        <h3>Salad & Greens</h3>
                         <p>25+ Items</p>
                         <a href="" class="btn bg--outline">View All Items</a>
                     </div>
                 </div>
-
-
             </div>
         </div>
-    </section>
+      </section>
 
 
     <!-- HOME ABOUT -->
-     <section class="homeAbout py--5">
+     <section class="homeAbout">
         <div class="container">
             <div class="homeAbout__wrapper">
                 <div class="homeAbout__text">
                     <small class="text--secondary mb--2">Welcome to Delicia</small>
                     <h2 class="title">About Our Restaurant</h2>
-                    <p class="mb--3">Since its inauguration in the Summer of 1968, Delicia has gained fame as one of the best Indian food restaurants in the world - serving mouthwatering fresh flavors, and a great range of dishes characterized by a high-quality, rich, Indian flare.</p>
-                    <a href="" class="btn bg--secondary">Book a Table</a>
+                    <p class="mb--3">Since its inauguration in the Summer of 1968, Delicia has gained fame as one of the best Indian food restaurants in the world serving mouthwatering fresh flavors, and a great range of dishes characterized by a high-quality, rich, Indian flare.
+                    </p>
+                    <a href="" class="btn bg--secondary">Book A Table</a>
                 </div>
             </div>
         </div>
-     </section>
+       </section>
 
      <!-- HOME EXPLORE MENU -->
-      <section class="exploreMenu bg--primary py--5">
+     <section class="exploreMenu bg--primary py--5">
         <div class="container">
             <div class="exploreMenu__title">
                 <h2 class="title">Explore Our Menu</h2>
-                <p>Crafter with a list of delicious Indian dishes, prepared with love and a <br> hight passion for cooking.</p>
+                <p>Crafted with a list of the most delicious Indian dishes, prepare with love and a<br> high passion cooking.
+                </p>
             </div>
             <div class="exploreMenu__wrapper">
-
-
-                <div class="exploreMenu__content">
-
+                <div class="exploreMenu__content animate__animated animate__fadeInDown" data-aos="fade-right">
                     <ul>
                         <li>Delicia Special Chicken</li>
                         <li>$25</li>
                     </ul>
-                    <p>Spicy, deep fried boneless chicken marinated in special spices</p>
-
+                    <p>
+                        Spicy, deep-fried boneless chicken marinated in special spices
+                    </p>
                     <ul>
                         <li>Delicia Special Chicken</li>
                         <li>$25</li>
                     </ul>
-                    <p>Spicy, deep fried boneless chicken marinated in special spices</p>
-
+                    <p>
+                        Spicy, deep-fried boneless chicken marinated in special spices
+                    </p>
                     <ul>
                         <li>Delicia Special Chicken</li>
                         <li>$25</li>
                     </ul>
-                    <p>Spicy, deep fried boneless chicken marinated in special spices</p>
-
+                    <p>
+                        Spicy, deep-fried boneless chicken marinated in special spices
+                    </p>
                     <ul>
                         <li>Delicia Special Chicken</li>
                         <li>$25</li>
                     </ul>
-                    <p>Spicy, deep fried boneless chicken marinated in special spices</p>
-
+                    <p>
+                        Spicy, deep-fried boneless chicken marinated in special spices
+                    </p>
                     <ul>
                         <li>Delicia Special Chicken</li>
                         <li>$25</li>
                     </ul>
-                    <p>Spicy, deep fried boneless chicken marinated in special spices</p>
-
-
+                    <p>
+                        Spicy, deep-fried boneless chicken marinated in special spices
+                    </p>
                 </div>
-
-
-                <div class="exploreMenu__content">
-
+                <div class="exploreMenu__content animate__animated animate__fadeInDown" data-aos="fade-left">
                     <ul>
                         <li>Delicia Special Chicken</li>
                         <li>$25</li>
                     </ul>
-                    <p>Spicy, deep fried boneless chicken marinated in special spices</p>
-
+                    <p>
+                        Spicy, deep-fried boneless chicken marinated in special spices
+                    </p>
                     <ul>
                         <li>Delicia Special Chicken</li>
                         <li>$25</li>
                     </ul>
-                    <p>Spicy, deep fried boneless chicken marinated in special spices</p>
-
+                    <p>
+                        Spicy, deep-fried boneless chicken marinated in special spices
+                    </p>
                     <ul>
                         <li>Delicia Special Chicken</li>
                         <li>$25</li>
                     </ul>
-                    <p>Spicy, deep fried boneless chicken marinated in special spices</p>
-
+                    <p>
+                        Spicy, deep-fried boneless chicken marinated in special spices
+                    </p>
                     <ul>
                         <li>Delicia Special Chicken</li>
                         <li>$25</li>
                     </ul>
-                    <p>Spicy, deep fried boneless chicken marinated in special spices</p>
-
+                    <p>
+                        Spicy, deep-fried boneless chicken marinated in special spices
+                    </p>
                     <ul>
                         <li>Delicia Special Chicken</li>
                         <li>$25</li>
                     </ul>
-                    <p>Spicy, deep fried boneless chicken marinated in special spices</p>
-
-
+                    <p>
+                        Spicy, deep-fried boneless chicken marinated in special spices
+                    </p>
                 </div>
-
-
             </div>
         </div>
-      </section>
+    </section>
 
       <!-- BOOK A TABLE -->
-      <section class="booking bg--primary py--10">
+      <section class="booking bg--primary py--5">
         <div class="container">
             <div class="booking__wrapper">
                 <div class="booking__table bg--primary">
-                    <h4 class="text--secondary t-align--center mb--2">. Book A Table .</h4>
-
-                    <form action="">
+                    <h4 class="text--secondary t-align--center mb--2">. Book A Table .
+                    </h4>
+                    <form data-aos="zoom-in-up">
                         <div class="booking__fullName">
-                            <input type="text" placeholder="First Name">
-                            <input type="text" placeholder="Last Name">
+                            <input type="text" placeholder="First Name" />
+                            <input type="text" placeholder="Last Name" />
                         </div>
-
-                        <input type="text" placeholder="Email Address">
-                        <input type="text" placeholder="Subject">
-                        <textarea name="" id="" placeholder="Your Message"></textarea>
-
+                        <input type="text" placeholder="Email Adress" />
+                        <input type="text" placeholder="Subject" />
+                        <textarea placeholder="Your Message"></textarea>
                         <div class="booking__button">
                             <a href="" class="btn bg--radius">Submit Form</a>
                         </div>
@@ -217,14 +219,14 @@
                 </div>
             </div>
         </div>
-      </section>
+    </section>
 
       <!-- TESTIMONIAL -->
 
       <section class="testimonial bg--primary py--5">
         <div class="container">
             <div class="testimonial__wrapper">
-                <div class="testimonial__slider">
+                <div class="testimonial__slider animate__animated animate__slideInDown">
 
 
                     <div class="testimonial__clients">
@@ -299,7 +301,94 @@
         </div>
        </section>
 
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-      <script src="./js/slider.js"></script>
+
+       <!-- BLOG -->
+       <section class="homeBlog bg--primary py--5">
+        <div class="container">
+            <div class="homeBlog__title">
+                <h2 class="title-2 t-align--center mb--unset">From Our Blog</h2>
+                <p class="t-align--center pb--2">Keep up with our latest food trends, new items, and other updates and news from <br> our fun blogs and articles that explore the world of Indian cuisine.</p>
+            </div>
+            <div class="homeBlog__wrapper">
+
+                <div class="homeBlog__card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                    <img src="./IMG/ramen.png" alt="">
+                    <h3>An Indian Version of Ramen</h3>
+                    <p>Amet minim mollit non deserunt ullumco est sit aliqua althrough dolor <br> domet sint. Velt ther sequat duis enim velt mollit xercition.</p>
+                </div>
+
+                <div class="homeBlog__card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                    <img src="./IMG/pasta.jpg" alt="">
+                    <h3>An Indian Version of Ramen</h3>
+                    <p>Amet minim mollit non deserunt ullumco est sit aliqua althrough dolor <br> domet sint. Velt ther sequat duis enim velt mollit xercition.</p>
+                </div>
+
+                <div class="homeBlog__card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                    <img src="./IMG/chicken at home.jpg" alt="">
+                    <h3>An Indian Version of Ramen</h3>
+                    <p>Amet minim mollit non deserunt ullumco est sit aliqua althrough dolor <br> domet sint. Velt ther sequat duis enim velt mollit xercition.</p>
+                </div>
+
+            </div>
+        </div>
+       </section>
+
+       <!-- FOOTER -->
+       <footer class="footer bg--dark py--5">
+        <div class="container">
+            <div class="footer__wrapper">
+                <!-- 1 -->
+                <ul>
+                    <li><img src="./IMG/icon-logo-removebg-preview.png" alt=""></li>
+                    <li><span>Phone: </span>407-509-3646</li>
+                    <li><span>Mail: </span>sketchix@support.com</li>
+                    <li><span>Address: </span>16122 Collins Street West Victoria 8265 Australia</li>
+                </ul>
+                <!-- 2 -->
+                <ul>
+                    <li><h4 class="mb--2">Useful Link</h4></li>
+                    <li>About Us</li>
+                    <li>Food Menu</li>
+                    <li>My Account</li>
+                    <li>List a Item</li>
+                </ul>
+                <!-- 3 -->
+                <ul>
+                    <li><h4 class="mb--2">Community</h4></li>
+                    <li>Map</li>
+                    <li>Store Location</li>
+                    <li>Photography</li>
+                    <li>Games</li>
+                    <li>Music</li>
+                </ul>
+<!-- last Part -->
+                 <div class="footer__lastPart">
+                    <h4 class="mb--2">Community</h4>
+                    <div class="footer__subscribe">
+                        <input type="text" placeholder="Your Email Address" />
+                        <a href=""class="btn bg--footer">Subscribe</a>
+                    </div>
+                    <ul class="footer__social">
+                        <li>
+                            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-pinterest"></i></a></li>
+                    </ul>
+                 </div>
+            </div>
+            <p>©Copyright 2022.Powered by WPDeveloper</p>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/toggleMenu.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
