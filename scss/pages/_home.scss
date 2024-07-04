@@ -52,7 +52,7 @@
         text-align: center;
         padding: 2rem 1rem;
         border: 2px solid transparent;
-        transition: 0.1s ease;
+        transition: 0.6s ease;
         margin-top: 3rem;
         border-radius: 2rem;
 
@@ -60,7 +60,7 @@
         &:hover{
             border: 2px solid $clr-secondary;
             cursor: pointer;
-            transition: 0.1s ease;
+            transition: 0.6s ease;
         }
 
         p{
@@ -226,6 +226,7 @@
         textarea{
             @extend input;
             height: 10rem;
+            resize: none;
         }
     }
     &__fullName {

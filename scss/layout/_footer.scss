@@ -75,9 +75,19 @@
             }
         }
 }
-p{
-    text-align: center;
-}
+    p{
+        text-align: center;
+    }
+
+    .split {
+        display: flex;
+        gap: 5rem;
+    }
 
 
+    @include mediaQuery(520px){
+        .footer__social{
+            justify-content: center;
+        }
+    }
 }

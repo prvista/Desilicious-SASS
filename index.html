@@ -10,25 +10,23 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
-
     <!-- <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
-</head>
 
-    
+</head>  
     <body>
-        <!-- HEADER -->
+    <!-- HEADER -->
     <header class="header bg--dark">
     <div class="container">
         <div class="header__wrapper">
             <img src="./IMG/icon-logo-removebg-preview.png" alt="">
             <nav>
                 <ul class="header__nav">
-                    <li><a href="#">Home</a></li>
+                    <li><a id="active" href="#">Home</a></li>
                     <li><a href="./menu.html">Menu</a></li>
                     <li><a href="./chef.html">Chefs</a></li>
                     <li><a href="./product.html">Product</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
                 </ul>
             </nav>
             <div class="toggle__menu">
@@ -40,13 +38,13 @@
     </div>
     </header>
 
-        <!-- Banner -->
+    <!-- Banner -->
      <section class="homeBanner bg--dark">
         <div class="container">
-            <div class="homeBanner__wrapper" data-aos="fade-up">
-                <h4>IRRESISTTIBLY GOOD</h4>
-                <h1>The Rich Taste of Indian Flavors</h1>
-                <p class="mb--3">Enjoy the taste of the best and most authentic Indian cuisines that are guaranted to make <br> you want more with each bite!
+            <div class="homeBanner__wrapper">
+                <h4 data-aos="zoom-in">IRRESISTTIBLY GOOD</h4>
+                <h1 data-aos="zoom-in">The Rich Taste of Indian Flavors</h1>
+                <p class="mb--3" data-aos="zoom-in">Enjoy the taste of the best and most authentic Indian cuisines that are guaranted to make <br> you want more with each bite!
                 </p>
                 <ul class="homeBanner__button">
                     <li><a href="" class="btn bg--secondary">Order Online</a></li>
@@ -55,7 +53,6 @@
             </div>
         </div>
      </section>
-
 
     <!-- SPECIAL MENU -->
     <section class="homeMenu bg--primary py--5">
@@ -94,7 +91,6 @@
         </div>
       </section>
 
-
     <!-- HOME ABOUT -->
      <section class="homeAbout">
         <div class="container">
@@ -111,7 +107,7 @@
        </section>
 
      <!-- HOME EXPLORE MENU -->
-     <section class="exploreMenu bg--primary py--5">
+    <section class="exploreMenu bg--primary py--5">
         <div class="container">
             <div class="exploreMenu__title">
                 <h2 class="title">Explore Our Menu</h2>
@@ -119,7 +115,7 @@
                 </p>
             </div>
             <div class="exploreMenu__wrapper">
-                <div class="exploreMenu__content animate__animated animate__fadeInDown" data-aos="fade-right">
+                <div class="exploreMenu__content" data-aos="fade-right">
                     <ul>
                         <li>Delicia Special Chicken</li>
                         <li>$25</li>
@@ -204,7 +200,7 @@
                 <div class="booking__table bg--primary">
                     <h4 class="text--secondary t-align--center mb--2">. Book A Table .
                     </h4>
-                    <form data-aos="zoom-in-up">
+                    <form>
                         <div class="booking__fullName">
                             <input type="text" placeholder="First Name" />
                             <input type="text" placeholder="Last Name" />
@@ -219,10 +215,9 @@
                 </div>
             </div>
         </div>
-    </section>
+        </section>
 
       <!-- TESTIMONIAL -->
-
       <section class="testimonial bg--primary py--5">
         <div class="container">
             <div class="testimonial__wrapper">
@@ -301,7 +296,6 @@
         </div>
        </section>
 
-
        <!-- BLOG -->
        <section class="homeBlog bg--primary py--5">
         <div class="container">
@@ -342,8 +336,9 @@
                     <li><img src="./IMG/icon-logo-removebg-preview.png" alt=""></li>
                     <li><span>Phone: </span>407-509-3646</li>
                     <li><span>Mail: </span>sketchix@support.com</li>
-                    <li><span>Address: </span>16122 Collins Street West Victoria 8265 Australia</li>
+                    <li><span>Address: </span>16122 Collins Str. Victoria 8265 Australia</li>
                 </ul>
+                <div class="split">
                 <!-- 2 -->
                 <ul>
                     <li><h4 class="mb--2">Useful Link</h4></li>
@@ -361,7 +356,8 @@
                     <li>Games</li>
                     <li>Music</li>
                 </ul>
-<!-- last Part -->
+                </div>
+    <!-- last Part -->
                  <div class="footer__lastPart">
                     <h4 class="mb--2">Community</h4>
                     <div class="footer__subscribe">

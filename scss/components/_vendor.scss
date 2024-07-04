@@ -56,3 +56,8 @@
     @extend .prev;
     left: 80rem;
 }
+
+#active{
+    color: $clr-secondary;
+    font-weight: 700;
+}

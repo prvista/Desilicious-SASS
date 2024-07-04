@@ -1,0 +1,28 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+.blog {
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    &__card {
+        max-width: 50rem;
+        margin: 0 auto;
+
+        img {
+            border-radius: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 2rem;
+        }
+
+        a {
+            margin-bottom: 1;
+        }
+    }
+}

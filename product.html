@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./dist/css/main.min.css">
     <link rel="icon" href="./IMG/icon-logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
@@ -20,9 +21,9 @@
                         <li><a href="./index.html">Home</a></li>
                         <li><a href="./menu.html">Menu</a></li>
                         <li><a href="./chef.html">Chefs</a></li>
-                        <li><a href="#">Product</a></li>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a id="active" href="#">Product</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
                     </ul>
                 </nav>
                 <div class="toggle__menu">
@@ -34,11 +35,12 @@
         </div>
     </header>
 
+    <!-- PRODUCT -->
     <section class="product bg--primary py--10">
         <div class="container">
             <div class="product__wrapper">
                 <!--   PRODUCT ITEM -->
-                <div class="product__item">
+                <div class="product__item" data-aos="fade-right">
 
                     <div class="product__card">
                         <img src="./IMG/beef-sheek.png" alt="">
@@ -49,7 +51,14 @@
 
                     <div class="product__card">
                         <img src="./IMG/chicken-biryani.png" alt="">
-                        <h2>Beef Sheek</h2>
+                        <h2>Chicken Biryani</h2>
+                        <p>$12.00</p>
+                        <a href="" class="btn bg--product"><i class="fa-solid fa-cart-shopping"></i> ADD TO CART</a>
+                    </div>
+
+                    <div class="product__card">
+                        <img src="./IMG/salad and greens.png" alt="">
+                        <h2>Fresh Salad</h2>
                         <p>$12.00</p>
                         <a href="" class="btn bg--product"><i class="fa-solid fa-cart-shopping"></i> ADD TO CART</a>
                     </div>
@@ -60,69 +69,30 @@
                         <p>$12.00</p>
                         <a href="" class="btn bg--product"><i class="fa-solid fa-cart-shopping"></i> ADD TO CART</a>
                     </div>
+
                     <div class="product__card">
-                        <img src="./IMG/beef-sheek.png" alt="">
-                        <h2>Beef Sheek</h2>
+                        <img src="./IMG/chicken-biryani.png" alt="">
+                        <h2>Chicken Biryani</h2>
                         <p>$12.00</p>
                         <a href="" class="btn bg--product"><i class="fa-solid fa-cart-shopping"></i> ADD TO CART</a>
                     </div>
+
                     <div class="product__card">
-                        <img src="./IMG/beef-sheek.png" alt="">
-                        <h2>Beef Sheek</h2>
-                        <p>$12.00</p>
-                        <a href="" class="btn bg--product"><i class="fa-solid fa-cart-shopping"></i> ADD TO CART</a>
-                    </div>
-                    <div class="product__card">
-                        <img src="./IMG/beef-sheek.png" alt="">
-                        <h2>Beef Sheek</h2>
+                        <img src="./IMG/salad and greens.png" alt="">
+                        <h2>Fresh Salad</h2>
                         <p>$12.00</p>
                         <a href="" class="btn bg--product"><i class="fa-solid fa-cart-shopping"></i> ADD TO CART</a>
                     </div>
 
                 </div>
 
-                <div class="product__list">
+                <div class="product__list" data-aos="fade-left">
                     <div class="product__search">
                         <input type="text" placeholder="Search Item">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
 
                     <div class="product__category">
-
-                        <!-- <table class="product__table">
-                            <tr>
-                                <td><h2>Category:</h2></td>
-                            </tr>
-                            <tr>
-                                <td>Chicken Menu</td>
-                                <td>(10)</td>
-                            </tr>
-                            <tr>
-                                <td>Rice Menu</td>
-                                <td>(5)</td>
-                            </tr>
-                            <tr>
-                                <td>Beef Menu</td>
-                                <td>(5)</td>
-                            </tr>
-                            <tr>
-                                <td>Mutton Menu</td>
-                                <td>(5)</td>
-                            </tr>
-                            <tr>
-                                <td>Salad</td>
-                                <td>(15)</td>
-                            </tr>
-                            <tr>
-                                <td>Dessert</td>
-                                <td>(15)</td>
-                            </tr>
-                            <tr>
-                                <td>Paan & Masala</td>
-                                <td>(5)</td>
-                            </tr>
-                        </table> -->
-
                         <div class="product__category__list">
                             <h2>Category:</h2>
                             <ul>
@@ -162,6 +132,7 @@
         </div>
     </section>
 
+    <!-- FOOTER -->
     <footer class="footer bg--dark py--5">
         <div class="container">
             <div class="footer__wrapper">
@@ -170,8 +141,9 @@
                     <li><img src="./IMG/icon-logo-removebg-preview.png" alt=""></li>
                     <li><span>Phone: </span>407-509-3646</li>
                     <li><span>Mail: </span>sketchix@support.com</li>
-                    <li><span>Address: </span>16122 Collins Street West Victoria 8265 Australia</li>
+                    <li><span>Address: </span>16122 Collins Str. Victoria 8265 Australia</li>
                 </ul>
+                <div class="split">
                 <!-- 2 -->
                 <ul>
                     <li><h4 class="mb--2">Useful Link</h4></li>
@@ -189,8 +161,9 @@
                     <li>Games</li>
                     <li>Music</li>
                 </ul>
-<!-- last Part -->
-                 <div class="footer__lastPart">
+                </div>
+    <!-- last Part -->
+                    <div class="footer__lastPart">
                     <h4 class="mb--2">Community</h4>
                     <div class="footer__subscribe">
                         <input type="text" placeholder="Your Email Address" />
@@ -204,12 +177,16 @@
                         <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
                         <li><a href=""><i class="fa-brands fa-pinterest"></i></a></li>
                     </ul>
-                 </div>
+                    </div>
             </div>
             <p>©Copyright 2022.Powered by WPDeveloper</p>
         </div>
     </footer>
     
     <script src="./js/toggleMenu.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

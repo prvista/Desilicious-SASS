@@ -1077,6 +1077,11 @@ img {
   left: 80rem;
 }
 
+#active {
+  color: #dd1d01;
+  font-weight: 700;
+}
+
 .title, .title-2 {
   font-size: 3rem;
   margin-bottom: 2rem;
@@ -1272,6 +1277,35 @@ img {
 .footer p {
   text-align: center;
 }
+.footer .split {
+  display: flex;
+  gap: 5rem;
+}
+@media screen and (max-width: 520px) {
+  .footer .footer__social {
+    justify-content: center;
+  }
+}
+
+.blog__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.blog__card {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+.blog__card img {
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+}
+.blog__card p {
+  margin-bottom: 2rem;
+}
+.blog__card a {
+  margin-bottom: 1;
+}
 
 .chefs__title h2 {
   text-align: center;
@@ -1302,6 +1336,139 @@ img {
 }
 .chefs__card img {
   border-radius: 2rem;
+}
+
+@media screen and (max-width: 520px) {
+  .contact__wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+.contact__icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  gap: 5rem;
+  font-size: 1.4rem;
+}
+@media screen and (max-width: 520px) {
+  .contact__icons {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+.contact__icons ul li i {
+  font-size: 2rem;
+  color: #dd1d01;
+  margin-bottom: 1rem;
+}
+.contact__map {
+  justify-content: center;
+  display: flex;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+.contact__map iframe {
+  border-radius: 2rem;
+  width: 70%;
+  height: 40rem;
+}
+.contact__title {
+  text-align: center;
+}
+.contact__title h2 {
+  font-size: 2rem;
+}
+.contact__title2 {
+  text-align: center;
+  display: none;
+}
+.contact__title2 h2 {
+  font-size: 2rem;
+}
+.contact__form {
+  justify-content: center;
+  display: flex;
+  margin: 0 auto;
+}
+.contact__form form {
+  padding: 2rem 0;
+}
+.contact__form input[type=text], .contact__form active {
+  max-width: 100%;
+  width: 70rem;
+  margin: 1rem 0;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  background: transparent;
+  border-radius: 1rem;
+  padding: 1rem;
+  color: #fff;
+}
+.contact__form textarea, .contact__form active {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background: transparent;
+  border-radius: 1rem;
+  padding: 3rem 1rem;
+  max-width: 70rem;
+  min-width: 70rem;
+  width: 70rem;
+  height: 15rem;
+  max-height: 20rem;
+  margin: 1rem 0;
+  color: #fff;
+}
+.contact__form .contact__fullname {
+  display: flex;
+  gap: 1rem;
+}
+.contact__form .contact__fullname input[type=text] {
+  width: 34.5rem;
+}
+.contact__form .contact__button {
+  justify-content: center;
+  display: flex;
+  padding: 2rem 0;
+}
+@media screen and (max-width: 520px) {
+  .contact__form {
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 520px) {
+  .contact input[type=text] {
+    width: 20rem;
+  }
+  .contact textarea {
+    width: 20rem;
+    max-width: 20rem;
+    min-width: 20rem;
+  }
+  .contact .contact__fullname {
+    display: unset;
+  }
+  .contact .contact__fullname input[type=text] {
+    width: 20rem;
+  }
+  .contact__map {
+    margin: 0;
+  }
+  .contact__map iframe {
+    border-radius: 2rem;
+    width: 100%;
+    height: 40rem;
+  }
+  .contact__title {
+    display: none;
+  }
+  .contact__title2 {
+    display: unset;
+  }
 }
 
 .homeBanner {
@@ -1353,14 +1520,14 @@ img {
   text-align: center;
   padding: 2rem 1rem;
   border: 2px solid transparent;
-  transition: 0.1s ease;
+  transition: 0.6s ease;
   margin-top: 3rem;
   border-radius: 2rem;
 }
 .homeMenu__card:hover {
   border: 2px solid #dd1d01;
   cursor: pointer;
-  transition: 0.1s ease;
+  transition: 0.6s ease;
 }
 .homeMenu__card p {
   color: #dd1d01;
@@ -1535,6 +1702,7 @@ img {
 }
 .booking__table textarea {
   height: 10rem;
+  resize: none;
 }
 .booking__fullName {
   display: flex;
